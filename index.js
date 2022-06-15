@@ -1,12 +1,10 @@
-const navSlider = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav_menu");
-  const navLinks = document.querySelectorAll(".nav_menu li");
+const menuToggle = document.querySelector(".menu-icon");
+const closeToggle = document.querySelector(".close-icon");
+const menuContainer = document.querySelector(".mobile-menu-container");
 
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
-    burger.classList.toggle("toggle");
-  });
-};
-
-navSlider();
+menuToggle.addEventListener("click", () => {
+  menuContainer.classList.add("active");
+});
+closeToggle.addEventListener("click", () => {
+  menuContainer.classList.remove("active");
+});
