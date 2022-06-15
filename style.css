@@ -80,8 +80,6 @@ h2 {
 
 /* --------------------------header------------------------ */
 
-.wrapper {
-}
 header {
   width: 100%;
   padding: 2rem 3rem;
@@ -218,10 +216,14 @@ nav ul li a {
 .para-main {
   line-height: 2;
   margin-bottom: 2em;
+  width: 100%;
 }
 .para-info > h1 {
   font-size: 3rem;
   margin-bottom: 0.6em;
+}
+.para-info {
+  width: 100%;
 }
 .about {
   padding: 0.8rem 2rem;
@@ -749,13 +751,14 @@ button.hover {
   .para-info {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0;
   }
   .para-info h1 {
     align-items: center;
     font-size: 1.5rem;
+    padding-bottom: 2rem;
   }
   .social-info {
     width: 100%;
@@ -835,7 +838,7 @@ button.hover {
   }
   /* ------------------Footer------------------- */
   .footer {
-    height: 40vh;
+    height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -872,13 +875,7 @@ button.hover {
     width: 100%;
     margin-right: 0;
   }
-  /* .about_header > h1 {
-    font-size: 2rem;
-    width: 100%;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    text-align: center;
-  } */
+
   .about_header {
     margin-bottom: 2em;
   }
@@ -973,11 +970,24 @@ button.hover {
   .bg-semi {
     background-image: none;
   }
+  .nav_menu {
+    display: none;
+  }
+  .container {
+    padding: 2em;
+  }
+  .ready-info h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
 }
 
 /* ------------------media screen @ 1000px----------------- */
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
+  /* .body {
+    display: none;
+  }
   .about-us {
     flex-direction: column-reverse;
   }
@@ -1028,6 +1038,7 @@ button.hover {
   .nav_menu {
     display: none;
   }
+
   .plan {
     margin-top: 1em;
   }
@@ -1079,13 +1090,6 @@ button.hover {
   .business {
     display: flex;
   }
-  /* .about_header > h1 {
-    font-size: 3rem;
-    width: 70%;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    text-align: center;
-  } */
   .about-background img {
     width: 100%;
     background-size: contain;
@@ -1097,5 +1101,5 @@ button.hover {
 
   .pricing-title h1 {
     margin: 5em;
-  }
+  } */
 }
