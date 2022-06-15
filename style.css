@@ -119,6 +119,10 @@ nav ul li a {
 .mobile-menu-container {
   display: none;
 }
+.bg-sm,
+.bg-ph {
+  display: none;
+}
 
 /* -----xx---------------------header-----------xx------------- */
 
@@ -659,6 +663,23 @@ button.hover {
   .mobile_nav {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    z-index: 888;
+  }
+  .bg-sm {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .bg-ph {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 100%;
+    z-index: -1;
   }
   .mobile-menu-container {
     position: fixed;
@@ -672,6 +693,7 @@ button.hover {
     z-index: 200;
     left: 100%;
     transition: all 1s ease;
+    cursor: pointer;
   }
   .mobile-menu-container.active {
     left: 0;
@@ -687,6 +709,7 @@ button.hover {
     opacity: 0;
     pointer-events: none;
     transition: all 1s ease;
+    cursor: pointer;
   }
   .mobile-menu-container ul {
     list-style: none;
@@ -716,7 +739,7 @@ button.hover {
   }
 
   .hero {
-    margin-top: 45em;
+    margin-top: 25em;
     padding: 0 1rem;
   }
   .hero-1 {
